@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Part I</title>
+    <link rel="stylesheet" type="text/css" href="survey.css">
+</head>
+<body>
+    <h1>
+        Part I
+    </h1>
+    <h2> 
+        Instructions:
+    </h2>
+    <h3>
+        Please fill out the following questions to the best of your ability. None of the questions are requried. When you are done, please continue to Part II.
+    <h3>
+
+    <div id="demo_form_div">
+        <form id="demo_form">
+            <fieldset class="palegreen" id="age">
+                <h4>
+                    1. What is your current age?
+                </h4>
+                <ul>
+                    <li class="darkgreen">
+                        <input type="radio" id="1624" name="age" value= "16-24"/> <!--radio buttons!-->
+                        <label>16 - 24</label>
+                    </li>
+                    <li class="lightgreen">
+                        <input type="radio" id="2534" name="age" value= "25-34"/> <!--radio buttons!-->
+                        <label>25 - 34</label>
+                    </li>
+                    <li class="darkgreen">
+                        <input type="radio" id="3544" name="age" value= "35-44"/> <!--radio buttons!-->
+                        <label>35 - 44</label>
+                    </li>
+                    <li class="lightgreen">
+                        <input type="radio" id="4554" name="age" value= "45-54"/> <!--radio buttons!-->
+                        <label>45 - 54</label>
+                    </li>
+                    <li class="darkgreen">
+                        <input type="radio" id="5564" name="age" value= "55-64"/> <!--radio buttons!-->
+                        <label>55 - 64</label>
+                    </li>
+                    <li class="lightgreen">
+                        <input type="radio" id="6574" name="age" value= "65-74"/> <!--radio buttons!-->
+                        <label>65 - 74</label>
+                    </li>
+                    <li class="darkgreen">
+                        <input type="radio" id="75+" name="age" value= "75 or older"/> <!--radio buttons!-->
+                        <label>75 or older</label>
+                    </li> 
+                    <li class="lightgreen">
+                        <input type="radio" id="agePNTS" name="age" value= "Prefer not to say"/> <!--radio buttons!-->
+                        <label>Prefer not to say</label>
+                    </li> 
+                </ul>
+            </fieldset>
+            <fieldset class="lightblue"id="race">
+                <h4>
+                    2. What is your racial identity? Please select all that apply.
+                </h4>
+                <ul class="checkbox">
+                    <li class="darkblue">
+                        <label for="white">White/Caucasian.</label>
+                        <input type="checkbox" id="white" name="race[]" value="White/Caucasian"> <!--using notation with [] brackets to format into array to be read correctly in the PHP form -->
+                    </li>
+                    <li>
+                        <label for="black">Black/African-American.</label>
+                        <input type="checkbox" id="black" name="race[]" value="Black/African-American">
+                    </li>   
+                    <li class="darkblue">
+                        <label for="hispanic">Hispanic/Latinx</label>
+                        <input type="checkbox" id="hispanic" name="race[]" value="Hispanic/Latinx">
+                    </li>
+                    <li>
+                        <label for="natam">Native or Indigenous American</label>
+                        <input type="checkbox" id="natam" name="race[]" value="Native or Indigenous American">
+                    </li>
+                    <li class="darkblue">
+                        <label for="asian">Asian/Pacific Islander</label>
+                        <input type="checkbox" id="asian" name="race[]" value="Asian/Pacific Islander">
+                    </li>
+                    <li>
+                        <label for="other">Other</label>
+                        <input type="checkbox" id="other" name="race[]" value="Other">
+                    </li>
+                    <li class="darkblue">
+                        <label for="racePNTS">Prefer not to say</label>
+                        <input type="checkbox" id="racePNTS" name="race[]" value="Prefer not to say">
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="lightgreen">
+                <h4>
+                    3. What is your gender?
+                </h4>
+                <ul>
+                    <li class="darkgreen">
+                        <input type="radio" id="female" name="gender" value= "Female"/> 
+                        <label>Female</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="male" name="gender" value= "Male"/> 
+                        <label>Male</label>
+                    </li>
+                    <li class="darkgreen">
+                        <input type="radio" id="trans" name="gender" value= "Transgender"/> 
+                        <label>Transgender</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="agender" name="gender" value= "Agender"/> 
+                        <label>Agender</label>
+                    </li>
+                    <li class="darkgreen">
+                        <input type="radio" id="gfgq" name="gender" value= "Genderfluid/genderqueer"/> 
+                        <label>Genderfluid/genderqueer</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="genderPNTS" name="gender" value= "Prefer not to say"/> 
+                        <label>Prefer not to say</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="lightblue">
+                <h4>
+                    4. How would you characterize your political beliefs regarding issues such as minimum wage, abortion, immigration, or taxes?
+                </h4>
+                <ul>
+                    <li class="darkblue">
+                        <input type="radio" id="scons" name="polit" value= "Strongly conservative"/> 
+                        <label>Strongly conservative</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="mcons" name="polit" value= "Moderately conservative"/> 
+                        <label>Moderately conservative</label>
+                    </li>
+                    <li class="darkblue">
+                        <input type="radio" id="centrist" name="polit" value= "Centrist"/> 
+                        <label>Centrist</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="mlib" name="polit" value= "Moderately liberal"/> 
+                        <label>Moderately liberal</label>
+                    </li>
+                    <li class="darkblue">
+                        <input type="radio" id="slib" name="polit" value= "Strongly liberal"/> 
+                        <label>Strongly liberal</label>
+                    </li>
+                    <li> 
+                        <input type="radio" id="indep" name="polit" value= "Independent/other"/> 
+                        <label>Independent/other</label>
+                    </li>
+                    <li class="darkblue">
+                        <input type="radio" id="politPNTS" name="polit" value= "Prefer not to say"/> 
+                        <label>Prefer not to say</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="lightgreen">
+                <h4>
+                    5. What is your current <em>individual</em> yearly income?
+                </h4>
+                <ul>
+                    <li class="darkgreen">
+                        <input type="radio" id="less10" name="income" value= "Below $10,000"/> 
+                        <label>Below $10,000</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="1025" name="income" value= "$10,000 - $24,999"/> 
+                        <label>$10,000 - $24,999</label>
+                    </li>
+                    <li class="darkgreen">
+                        <input type="radio" id="2550" name="income" value= "$25,000 - $49,999"/> 
+                        <label>$25,000 - $49,999</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="5075" name="income" value= "$50,000 - $74,999"/> 
+                        <label>$50,000 - $74,999</label>
+                    </li>
+                    <li class="darkgreen">
+                        <input type="radio" id="5075" name="income" value= "$75,000 - $99,999"/> 
+                        <label>$75,000 - $99,999</label>
+                    </li>
+                     <li>
+                        <input type="radio" id="5075" name="income" value= "$75,000 - $99,999"/> 
+                        <label>$100,000 - $124,999</label>
+                    </li>
+                     <li class="darkgreen">
+                        <input type="radio" id="5075" name="income" value= "$75,000 - $99,999"/> 
+                        <label>$125,000 and above</label>
+                    </li>
+                     <li>
+                        <input type="radio" id="5075" name="income" value= "$75,000 - $99,999"/> 
+                        <label>Prefer not to say</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="lightblue">
+                <h4>
+                    6. What is your marital status?
+                </h4>
+                <ul>
+                    <li class="darkblue">
+                        <input type="radio" id="5075" name="income" value= "$75,000 - $99,999"/> 
+                        <label>Single/never married</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="5075" name="income" value= "$75,000 - $99,999"/> 
+                        <label>Married</label>
+                    </li>
+                    <li class="darkblue">
+                        <input type="radio" id="5075" name="income" value= "$75,000 - $99,999"/> 
+                        <label>Domestic Partnership</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="5075" name="income" value= "$75,000 - $99,999"/> 
+                        <label>Widowed</label>
+                    </li>
+                    <li class="darkblue">
+                        <input type="radio" id="5075" name="income" value= "$75,000 - $99,999"/> 
+                        <label>Divoreced/separated</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="5075" name="income" value= "$75,000 - $99,999"/> 
+                        <label>Prefer not to say</label>
+                    </li>
+                </ul>
+            </fieldset> 
+            <fieldset class="lightgreen">
+                <h4>
+                    7. What is the highest level of education that you have completed?
+                </h4>
+                <ul>
+                    <li class="darkgreen">
+                        <input type="radio" id="5075" name="income" value= "$75,000 - $99,999"/> 
+                        <label>Have not completed a HS diploma program or equivalent (GED, etc.)</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="5075" name="income" value= "$75,000 - $99,999"/> 
+                        <label>HS diploma or equivalent (GED, etc.)</label>
+                    </li>
+                     <li class="darkgreen">
+                        <input type="radio" id="5075" name="income" value= "$75,000 - $99,999"/> 
+                        <label>Some college, but no degree</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="5075" name="income" value= "$75,000 - $99,999"/> 
+                        <label>Associate's degree</label>
+                    </li>
+                     <li class="darkgreen">
+                        <input type="radio" id="5075" name="income" value= "$75,000 - $99,999"/> 
+                        <label>Bachelor's degree</label>
+                    </li>
+                     <li>
+                        <input type="radio" id="5075" name="income" value= "$75,000 - $99,999"/> 
+                        <label>Master's degree</label>
+                    </li>
+                    <li class="darkgreen">
+                        <input type="radio" id="5075" name="income" value= "$75,000 - $99,999"/> 
+                        <label>Professional degree (MD, JD, DDS, etc.)</label>
+                    </li>
+                     <li>
+                        <input type="radio" id="5075" name="income" value= "$75,000 - $99,999"/> 
+                        <label>Doctoral degree (PhD)</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="lightblue">
+                <h4>
+                    8. What is your current employment status?
+                </h4>
+                <ul>
+                    <li class="darkblue">
+                        <input type="radio" id="5075" name="income" value= "$75,000 - $99,999"/> 
+                        <label>Employed full-time (40 or more hours per week)</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="5075" name="income" value= "$75,000 - $99,999"/> 
+                        <label>Employed part-time (less than 40 hours per week)</label>
+                    </li>
+                    <li class="darkblue">
+                        <input type="radio" id="5075" name="income" value= "$75,000 - $99,999"/> 
+                        <label>Unemployed and currently searching for a job</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="5075" name="income" value= "$75,000 - $99,999"/> 
+                        <label>Unemployed and not currently searching for a job</label>
+                    </li>
+                    <li class="darkblue">
+                        <input type="radio" id="5075" name="income" value= "$75,000 - $99,999"/> 
+                        <label>Self-employed</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="5075" name="income" value= "$75,000 - $99,999"/> 
+                        <label>Student</label>
+                    </li>
+                    <li class="darkblue">
+                        <input type="radio" id="5075" name="income" value= "$75,000 - $99,999"/> 
+                        <label>Homemaker</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="5075" name="income" value= "$75,000 - $99,999"/> 
+                        <label>Retired</label>
+                    </li>
+                    <li class="darkblue">
+                        <input type="radio" id="5075" name="income" value= "$75,000 - $99,999"/> 
+                        <label>Prefer not to say</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="lightgreen">
+                <h4>
+                    9. Is English your first language?
+                </h4>
+                <ul>
+                    <li class="darkgreen">
+                        <input type="radio" id="5075" name="income" value= "$75,000 - $99,999"/> 
+                        <label>Yes</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="5075" name="income" value= "$75,000 - $99,999"/> 
+                        <label>No</label>
+                    </li>
+                    <li class="darkgreen">
+                        <input type="radio" id="5075" name="income" value= "$75,000 - $99,999"/> 
+                        <label>Prefer not to say</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="lightblue">
+                <h4>
+                    10. In what type of area do you currently live?
+                </h4>
+                <ul>
+                    <li class="darkblue">
+                        <input type="radio" id="5075" name="income" value= "$75,000 - $99,999"/> 
+                        <label>Urban area</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="5075" name="income" value= "$75,000 - $99,999"/> 
+                        <label>Suburban area</label>
+                    </li>
+                    <li class="darkblue">
+                        <input type="radio" id="5075" name="income" value= "$75,000 - $99,999"/> 
+                        <label>Rural area</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="5075" name="income" value= "$75,000 - $99,999"/> 
+                        <label>Prefer not to say</label>
+                    </li>
+                </ul>
+            </fieldset>
+         </div>
+    </div> 
+    <a href='part2.html'>Continue to Part II</a>  
+</body>
+</html>
