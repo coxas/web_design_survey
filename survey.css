@@ -9,6 +9,7 @@ fieldset {
     padding: 0px;
     margin-top: 20px;
     margin-bottom: 20px;
+    border: 1px solid black;
 }
 h4 {
     padding: 8px;
@@ -29,9 +30,32 @@ li {
     padding: 5px;
     margin: 0px;
 }
+a {
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    display: block;
+    width: 200px;
+    color: white;
+    background-color: #00e613;
+    border: 5px solid #00e613;
+    border-radius: 40px;
+}
+a:hover {
+    border-color: #00e613;
+    background-color: white; 
+    color: #00e613;
+}
 input[type="checkbox"] {
     display: inline-block;
     float: left;
+}
+#thanks {
+    text-align: center;
+    font-size: 26px;
+    margin-top: 100px;
 }
 .text {
     margin-left: 10%;
