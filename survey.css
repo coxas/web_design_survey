@@ -1,5 +1,5 @@
 body {
-    font-family: Arial;
+    font-family: 'Roboto', sans-serif;
 }
 div {
     margin-left: 13%;
@@ -10,6 +10,8 @@ fieldset {
     margin-top: 20px;
     margin-bottom: 20px;
     border: 1px solid black;
+    border-radius: 12px;
+    padding-bottom: 10px;
 }
 h4 {
     padding: 8px;
@@ -19,6 +21,7 @@ img {
     display: block;
     margin: auto;
     padding-bottom: 20px;
+    width: 95%;
 }
 ul {
     list-style-type: none;
@@ -78,17 +81,17 @@ input[type="checkbox"] {
 
 
 .darkgreen {
-    background-color: #009e52;
+    background-color: #b8dfff;
 }
 .lightgreen {
-    background-color: #c7ffe6;
+    background-color: #b8dfff;
 }
 .palegreen {
-    background-color: #c7ffe6;
+    background-color: #b8dfff;
 }
 .lightblue {
     background-color: #b8dfff;
 }
 .darkblue {
-    background-color: #3f7be9;
+    background-color: #b8dfff;
 }
